@@ -35,7 +35,7 @@
     <div class="row">
 
    <?php
-    $query="SELECT * FROM places";
+    $query="SELECT * FROM places WHERE location='south'";
     mysqli_query($db, $query) or die('error querring database.');
     $result=mysqli_query($db, $query);
     

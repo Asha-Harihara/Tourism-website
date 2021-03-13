@@ -1,18 +1,15 @@
 <?php
 
-function component()
+function component($placeName, $state, $placeimg)
 {
    $element='
    <div class="col-lg-3 col-md-6">
    <div class="card" style="width: 18rem;">
-   <img src="uploads/sun.jpg" class="card-img-top" alt="...">
+   <img src="'.$placeimg.'" class="card-img-top" alt="...">
    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the car content.</p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-   </div>
- </div>
- </div>';
- echo $element;
+     <h5 class="card-title">'. $placeName . '</h5> <p class="card-text">'.$state. '</p>
+      </div> 
+      </div> </div>';
+      echo $element;
 }
 ?>

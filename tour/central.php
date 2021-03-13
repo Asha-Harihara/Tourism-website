@@ -22,6 +22,7 @@
         
       });
       </script>
+      <link href='https://fonts.googleapis.com/css?family=Redressed' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <!-- font awsome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -35,7 +36,7 @@
     <div class="row">
 
    <?php
-    $query="SELECT * FROM places";
+    $query="SELECT * FROM places WHERE location='central'";
     mysqli_query($db, $query) or die('error querring database.');
     $result=mysqli_query($db, $query);
     
