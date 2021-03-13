@@ -34,7 +34,8 @@
     <div class="row">
 
    <?php
-    $query="SELECT * FROM places WHERE state='". $_POST["splace"]."'";
+     $srch=$_POST["splace"];
+    $query="SELECT * FROM places WHERE state='".$srch."' or name='".$srch."'";
     mysqli_query($db, $query) or die('error querring database.');
     $result=mysqli_query($db, $query);
     
