@@ -28,14 +28,13 @@
     <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
-<body>
-<h1 class="text-center" style="color: purple">On-A-Holiday</h1>
+<body><h1 class="text-center" style="color: purple">On-A-Holiday</h1>
     <div id="nav"></div>  
     <div class="container">
     <div class="row">
 
    <?php
-    $query="SELECT * FROM places";
+    $query="SELECT * FROM places WHERE location='north'";
     mysqli_query($db, $query) or die('error querring database.');
     $result=mysqli_query($db, $query);
     
